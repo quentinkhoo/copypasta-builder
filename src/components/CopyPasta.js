@@ -48,11 +48,16 @@ class CopyPasta extends Component {
     }
 
     buildCopyPastaFromText = (text) => {
+        //text = text.replace(/ /g, '');
         console.log(`text: ${text}`)
         var i;
         var copyPastaText = "";
         for (i = 0; i < text.length; i++) {
-            copyPastaText += copyPastaMapping[text.charAt(i)];
+            if (copyPastaMapping[text.charAt(i)] != undefined) {
+                copyPastaText += copyPastaMapping[text.charAt(i)];
+            } else {
+                copyPastaText += text.charAt(i);
+            }
         }
         this.setState({
             copyPastaText: copyPastaText

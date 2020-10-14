@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "55e234f53c29bf5c3247e6e83d74b4e7",
+    "revision": "8738c81f8cb89e07a7e48c8540a824cb",
     "url": "/copypasta-builder/index.html"
   },
   {

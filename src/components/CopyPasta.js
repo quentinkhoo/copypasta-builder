@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "../styles/CopyPasta.css";
 
 const inputPlaceholder = "Your nonsense goes here..."
 const outputPlaceholder = "Your Copy-Pasta appears here!"
@@ -15,27 +16,27 @@ class CopyPasta extends Component {
     
     render() {
         return (
-            <div>
-                <textarea
-                    id="input"
-                    type="text"
-                    style={{ 
-                        padding: "10px",
-                        margin: "10px"
-
-                     }}
-                    onChange={this.buildCopyPasta}
-                    placeholder={inputPlaceholder}
-                />
-                <textarea
-                id="output"
-                style={{ 
-                    padding: "10px",
-                    margin: "10px"
-
-                 }}
-                placeholder={outputPlaceholder}
-                />
+            <div className="copyPasta">
+                <div className="copyPastaLeft">
+                    <div className="shadowBoxLeft">
+                        <textarea
+                            id="input"
+                            autofocus="true"
+                            className="textInput"
+                            onChange={this.buildCopyPasta}
+                            placeholder={inputPlaceholder}
+                        />
+                    </div>
+                </div>
+                <div className="copyPastaRight">
+                    <div className="shadowBoxRight">
+                        <textarea
+                            id="output"
+                            className="textOutput"
+                            placeholder={outputPlaceholder}
+                        />
+                    </div>
+                </div>
             </div>
         );
     }
@@ -48,12 +49,11 @@ class CopyPasta extends Component {
     }
 
     buildCopyPastaFromText = (text) => {
-        //text = text.replace(/ /g, '');
         console.log(`text: ${text}`)
         var i;
         var copyPastaText = "";
         for (i = 0; i < text.length; i++) {
-            if (copyPastaMapping[text.charAt(i)] != undefined) {
+            if (copyPastaMapping[text.charAt(i)] !== undefined) {
                 copyPastaText += copyPastaMapping[text.charAt(i)];
             } else {
                 copyPastaText += text.charAt(i);

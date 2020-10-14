@@ -1,0 +1,57 @@
+@media (min-width: 600px) {
+  .copyPastaLeft {
+    width: 50%;
+    display: inline;
+    float: left;
+  }
+}
+
+@media (min-width: 600px) {
+  .copyPastaRight {
+    width: 50%;
+    display: inline;
+    float: right;
+  }
+}
+
+@media (max-width: 599px) {
+  .copyPastaLeft,
+  .copyPastaRight {
+    width: 100%;
+    display: block;
+    float: none;
+  }
+}
+
+@media (min-width: 600px) {
+  .shadowBoxLeft {
+    margin-left: 20px;
+    margin-right: 10px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 600px) {
+  .shadowBoxRight {
+    margin-left: 10px;
+    margin-right: 20px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 599px) {
+  .shadowBoxLeft,
+  .shadowBoxRight {
+    margin: 10px;
+    height: 200px;
+  }
+}
+
+textarea {
+  width: 100%;
+  height: 100%;
+}
+
+.textInput {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

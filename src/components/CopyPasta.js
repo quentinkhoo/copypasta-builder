@@ -3,6 +3,12 @@ import "../styles/CopyPasta.css";
 
 const inputPlaceholder = "Your nonsense goes here..."
 const outputPlaceholder = "Your Copy-Pasta appears here!"
+const copyButtonText = "Copy to Clipboard"
+const copyButtonClickedText = "Copied!"
+
+const copyButtonDisabledColor = "grey";
+const copyButtonEnabledColor = "white";
+
 const copyPastaMapping = require("../mappings/wide-character.json")
 
 class CopyPasta extends Component {
@@ -12,6 +18,10 @@ class CopyPasta extends Component {
             userText: "",
             copyPastaText: ""
         }
+    }
+
+    componentDidMount() {
+        this.toggleCopyButton();
     }
     
     render() {
@@ -34,11 +44,36 @@ class CopyPasta extends Component {
                             id="output"
                             className="textOutput"
                             placeholder={outputPlaceholder}
+                            readonly="true"
+                        />
+                        <input
+                            id="copy"
+                            type="button"
+                            className="copyButton"
+                            display="block"
+                            style={{color: copyButtonDisabledColor}}
+                            onClick={this.copyToClipboard}
+                            onMouseEnter={this.focusCopyButton}
+                            onMouseLeave={this.unfocusCopyButton}
+                            value={copyButtonText}
                         />
                     </div>
                 </div>
             </div>
         );
+    }
+
+    toggleCopyButton() {
+        var copyButton = document.getElementById('copy');
+        copyButton.value = copyButtonText;
+        var currentCopyPasta = document.getElementById('output').innerHTML;
+        if (currentCopyPasta.length > 0) {
+            copyButton.style.color = copyButtonEnabledColor;
+            copyButton.disabled = false;
+        } else {
+            copyButton.style.color = copyButtonDisabledColor;
+            copyButton.disabled = true;
+        }
     }
 
     buildCopyPasta = (event) => {
@@ -63,6 +98,29 @@ class CopyPasta extends Component {
             copyPastaText: copyPastaText
         })
         document.getElementById('output').innerHTML = copyPastaText;
+        this.toggleCopyButton();
+    }
+
+    copyToClipboard = () => {
+        var textToCopy = document.getElementById('output');
+        textToCopy.select();
+        textToCopy.setSelectionRange(0, 99999);
+        document.execCommand("copy");
+        // Do some UX stuff
+        var copyButton = document.getElementById('copy');
+        copyButton.value = copyButtonClickedText;
+    }
+
+    focusCopyButton = () => {
+        var copyButton = document.getElementById('copy');
+        if (copyButton.disabled === false) {
+            copyButton.style.backgroundColor = "#2aac2a"
+        }
+    }
+
+    unfocusCopyButton = () => {
+        var copyButton = document.getElementById('copy');
+        copyButton.style.backgroundColor = "limegreen";
     }
 }
 

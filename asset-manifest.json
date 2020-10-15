@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/copypasta-builder/static/css/main.21b8d74c.chunk.css",
-    "main.js": "/copypasta-builder/static/js/main.cdf03096.chunk.js",
-    "main.js.map": "/copypasta-builder/static/js/main.cdf03096.chunk.js.map",
+    "main.css": "/copypasta-builder/static/css/main.ea6c6df7.chunk.css",
+    "main.js": "/copypasta-builder/static/js/main.9127730d.chunk.js",
+    "main.js.map": "/copypasta-builder/static/js/main.9127730d.chunk.js.map",
     "runtime-main.js": "/copypasta-builder/static/js/runtime-main.edd72462.js",
     "runtime-main.js.map": "/copypasta-builder/static/js/runtime-main.edd72462.js.map",
     "static/js/2.5133f598.chunk.js": "/copypasta-builder/static/js/2.5133f598.chunk.js",
     "static/js/2.5133f598.chunk.js.map": "/copypasta-builder/static/js/2.5133f598.chunk.js.map",
     "index.html": "/copypasta-builder/index.html",
-    "precache-manifest.932a0ebcb6d374aa8dc1683bc4e2291b.js": "/copypasta-builder/precache-manifest.932a0ebcb6d374aa8dc1683bc4e2291b.js",
+    "precache-manifest.5f075d5497f856acd4e3c090c0c5ee79.js": "/copypasta-builder/precache-manifest.5f075d5497f856acd4e3c090c0c5ee79.js",
     "service-worker.js": "/copypasta-builder/service-worker.js",
-    "static/css/main.21b8d74c.chunk.css.map": "/copypasta-builder/static/css/main.21b8d74c.chunk.css.map",
+    "static/css/main.ea6c6df7.chunk.css.map": "/copypasta-builder/static/css/main.ea6c6df7.chunk.css.map",
     "static/js/2.5133f598.chunk.js.LICENSE.txt": "/copypasta-builder/static/js/2.5133f598.chunk.js.LICENSE.txt",
     "static/media/index.css": "/copypasta-builder/static/media/pepewallpaper.817a8b9b.png"
   },
   "entrypoints": [
     "static/js/runtime-main.edd72462.js",
     "static/js/2.5133f598.chunk.js",
-    "static/css/main.21b8d74c.chunk.css",
-    "static/js/main.cdf03096.chunk.js"
+    "static/css/main.ea6c6df7.chunk.css",
+    "static/js/main.9127730d.chunk.js"
   ]
 }

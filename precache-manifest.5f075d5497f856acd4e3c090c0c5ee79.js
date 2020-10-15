@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8738c81f8cb89e07a7e48c8540a824cb",
+    "revision": "6431fc213b6185dde655dac8cf62b0ee",
     "url": "/copypasta-builder/index.html"
   },
   {
-    "revision": "2b42a03ef7a493d62cec",
-    "url": "/copypasta-builder/static/css/main.21b8d74c.chunk.css"
+    "revision": "7c75255831397985fe94",
+    "url": "/copypasta-builder/static/css/main.ea6c6df7.chunk.css"
   },
   {
     "revision": "4e4ce293a7cf781e6f5d",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/copypasta-builder/static/js/2.5133f598.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2b42a03ef7a493d62cec",
-    "url": "/copypasta-builder/static/js/main.cdf03096.chunk.js"
+    "revision": "7c75255831397985fe94",
+    "url": "/copypasta-builder/static/js/main.9127730d.chunk.js"
   },
   {
     "revision": "d5b4d5aeacd972a544f5",

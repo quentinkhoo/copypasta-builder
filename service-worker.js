@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/copypasta-builder/precache-manifest.932a0ebcb6d374aa8dc1683bc4e2291b.js"
+  "/copypasta-builder/precache-manifest.5f075d5497f856acd4e3c090c0c5ee79.js"
 );
 
 self.addEventListener('message', (event) => {

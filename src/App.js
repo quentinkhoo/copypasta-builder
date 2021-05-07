@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter, Route, Redirect } from 'react-router-dom'
 
 import Header from "./components/Header.js";
 import CopyPasta from "./components/CopyPasta.js";
@@ -12,6 +12,9 @@ class App extends Component {
             <BrowserRouter>
                 <div className="App">
                     <Route path="/" component={Header} />
+                    <Route exact path="/">
+                        <Redirect to="/copypasta-builder" />
+                    </Route>
                     <Route path="/copypasta-builder" component={CopyPasta}/>
                     <Route path="/299" exact component={TwoNineNine } />
                 </div>

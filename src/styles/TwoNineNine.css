@@ -1,0 +1,26 @@
+.twoNine-container {
+    display: flex;
+    flex-direction: row;
+    margin: 15% 15%;
+    padding: 5%;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+.twoNine-dolan, .twoNine-mom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.twoNine-bigpic-container {
+    height: 20em;
+    width: 20em;
+}
+
+.twoNine-pic {
+    height: 100%;
+    width: 100%
+}
